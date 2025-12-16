@@ -17,4 +17,9 @@ LABEL \
   org.opencontainers.image.version="${BUILD_VERSION}" \
   org.opencontainers.image.source="https://github.com/victorigualada/hassio-addons"
 
+COPY run.sh /run.sh
+RUN chmod +x /run.sh
+
+ENTRYPOINT ["/run.sh"]
+
 

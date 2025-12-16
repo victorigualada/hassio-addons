@@ -2,7 +2,7 @@ name: ESPHome Visual Editor
 slug: esphome_visual_editor
 description: Schema-driven visual editor for ESPHome configs
 url: https://github.com/victorigualada/esphome-visual-editor
-version: "0.1.1"
+version: "0.1.2"
 arch:
   - amd64
   - aarch64
