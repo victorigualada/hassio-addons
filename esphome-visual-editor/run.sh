@@ -6,12 +6,7 @@ echo "[esphome-visual-editor] Starting..."
 OPTIONS_FILE="/data/options.json"
 
 export_options() {
-  if [ ! -f "$OPTIONS_FILE" ]; then
-    echo "[esphome-visual-editor] No $OPTIONS_FILE found; using defaults."
-    return 0
-  fi
-
-  echo "[esphome-visual-editor] Exporting options from $OPTIONS_FILE"
+  echo "[esphome-visual-editor] Exporting options from $OPTIONS_FILE" >&2
 
   python - <<'PY'
 import json

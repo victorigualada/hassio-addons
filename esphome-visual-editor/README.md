@@ -1,4 +1,4 @@
-## ESPHome Visual Editor (PoC)
+## ESPHome Visual Editor
 
 Schema-driven visual editor for ESPHome configs with ESP board selection and pinout images.
 

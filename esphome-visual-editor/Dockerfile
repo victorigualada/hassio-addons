@@ -17,7 +17,10 @@ LABEL \
   org.opencontainers.image.version="${BUILD_VERSION}" \
   org.opencontainers.image.source="https://github.com/victorigualada/hassio-addons"
 
-COPY run.sh /run.sh
+# Supervisor writes /data/options.json as root-owned on some installs; run entrypoint as root
+# so we can read options and create the projects dir reliably.
+USER root
+
 COPY --chmod=0755 run.sh /run.sh
 
 ENTRYPOINT ["/run.sh"]
