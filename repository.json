@@ -1,0 +1,6 @@
+{
+  "name": "victorigualada Home Assistant Add-ons",
+  "udev": true,
+  "url": "https://github.com/victorigualada/hassio-addons",
+  "maintainer": "victorigualada"
+}

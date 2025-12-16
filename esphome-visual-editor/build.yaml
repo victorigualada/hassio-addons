@@ -1,0 +1,6 @@
+build_from:
+  amd64: ghcr.io/victorigualada/esphome-visual-editor:latest
+  aarch64: ghcr.io/victorigualada/esphome-visual-editor:latest
+  armv7: ghcr.io/victorigualada/esphome-visual-editor:latest
+
+

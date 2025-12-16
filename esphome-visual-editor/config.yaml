@@ -1,0 +1,29 @@
+name: ESPHome Visual Editor
+slug: esphome_visual_editor
+description: Schema-driven visual editor for ESPHome configs
+url: https://github.com/victorigualada/esphome-visual-editor
+version: "0.1.0"
+arch:
+  - amd64
+  - aarch64
+  - armv7
+startup: services
+boot: auto
+init: false
+
+ingress: true
+ingress_port: 6056
+panel_icon: mdi:chip
+
+ports:
+  6056/tcp: 6056
+ports_description:
+  6056/tcp: Web UI + API
+
+options:
+  projects_dir: /config/esphome
+
+schema:
+  projects_dir: str
+
+
