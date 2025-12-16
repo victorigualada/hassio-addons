@@ -18,7 +18,7 @@ LABEL \
   org.opencontainers.image.source="https://github.com/victorigualada/hassio-addons"
 
 COPY run.sh /run.sh
-RUN chmod +x /run.sh
+COPY --chmod=0755 run.sh /run.sh
 
 ENTRYPOINT ["/run.sh"]
 
