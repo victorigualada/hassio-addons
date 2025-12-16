@@ -28,6 +28,8 @@ profile example flags=(attach_disconnected,mediate_deleted) {
 
   # Access to options.json and other files within your addon
   /data/** rw,
+  # Access to Home Assistant config directory when mounted via `map: - config:rw`
+  /config/** rw,
 
   # Start new profile for service
   /usr/bin/my_program cx -> my_program,

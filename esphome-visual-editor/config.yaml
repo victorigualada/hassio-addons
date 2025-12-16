@@ -2,7 +2,7 @@ name: ESPHome Visual Editor
 slug: esphome_visual_editor
 description: Schema-driven visual editor for ESPHome configs
 url: https://github.com/victorigualada/esphome-visual-editor
-version: "0.1.4"
+version: "0.1.5"
 arch:
   - amd64
   - aarch64
@@ -19,6 +19,11 @@ ports:
   6056/tcp: 6056
 ports_description:
   6056/tcp: Web UI + API
+
+# Mount Home Assistant directories into the add-on container.
+# Without this, /config won't exist inside the container.
+map:
+  - config:rw
 
 options:
   projects_dir: /config/esphome
